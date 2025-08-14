@@ -8,23 +8,34 @@ import fb from "../assets/facebook1.png"; // Importing Facebook image
 import insta from "../assets/instagram.png"; // Importing Instagram image
 import linkedin from "../assets/linkedin.png"; // Importing LinkedIn image
 import x from "../assets/x.png"; // Importing X (formerly Twitter) image
+import amazonlogo from "../assets/amazon.png"; // Importing Amazon image
+import googlelogo from "../assets/google-logo.png"; // Importing Google image
+import metalogo from "../assets/meta-logo.png"; // Importing Meta image
+import microsoftlogo from "../assets/microsoft-logo.png"; // Importing Microsoft image
+import nvidialogo from "../assets/nvidia.png"; // Importing Nvidia image
+import teslalogo from "../assets/tesla-logo.png"; // Importing Tesla image
+import applelogo from "../assets/apple-logo.png"; // Importing Apple image
 import sql from "../assets/sql.png"; // Importing SQL image
+import { Link, Outlet } from "react-router-dom"; // Importing Link for navigation
 
 const FirstPage = () => {
+    const lessThan = "<";
+    const greaterThan = ">";
+    const slash = "/";
   return (
     <>
       <header>
         <nav className="navbar">
             <div className="logo-container">
                 <img src={applogo} className="applogo" alt="Python" />
-                <div className="app-name">SkillBtye</div>
+                <div className="app-name"><span className="less-than">{lessThan}</span><span className="slash">{slash}</span><span className="app-head-title">SkillBtyes</span><span className="greater-than">{greaterThan}</span></div>
             </div>
             <div  className="nav-links">
-                <div className="about">
-                    <a href="/">About Us</a>
+                <div>
+                    <Link to="about"  className="about">About Us</Link>
                 </div>
-                <div className="contact">
-                    <a href="/">Contact</a>
+                <div>
+                    <Link to="contact"  className="contact">Contact</Link>
                 </div>
                 <button className="get-started-button">Get Started</button>
             </div>
@@ -55,6 +66,20 @@ const FirstPage = () => {
                 </p>
             </div>
         </section>
+        <section className="section-4">
+            <p className="section-4-description-1">Get Job In Large Company</p>
+            <div>
+                <marquee behavior="scroll" direction="left">
+                    <img className="amazon-logo" src={amazonlogo} alt="Amazon" />
+                    <img className="google-logo" src={googlelogo} alt="Google" />
+                    <img className="meta-logo" src={metalogo} alt="Meta" />
+                    <img className="microsoft-logo" src={microsoftlogo} alt="Microsoft" />
+                    <img className="nvidia-logo" src={nvidialogo} alt="Nvidia" />
+                    <img className="tesla-logo" src={teslalogo} alt="Tesla" />
+                    <img className="apple-logo" src={applelogo} alt="Apple" />
+                </marquee>
+            </div>
+        </section>
       </main>
       <footer className="footer">
         <div className="footer-content">
@@ -72,6 +97,7 @@ const FirstPage = () => {
             <a href="/"><img className="social-link" src={x} alt="" /></a>
         </div>
       </footer>
+        <Outlet />
     </>
   );
 }
