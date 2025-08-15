@@ -32,10 +32,10 @@ const FirstPage = () => {
             </div>
             <div  className="nav-links">
                 <div>
-                    <Link to="about"  className="about">About Us</Link>
+                    <a href="about"  className="about">About Us</a>
                 </div>
                 <div>
-                    <Link to="contact"  className="contact">Contact</Link>
+                    <a to="contact"  className="contact">Contact</a>
                 </div>
                 <button className="get-started-button">Get Started</button>
             </div>
@@ -97,7 +97,6 @@ const FirstPage = () => {
             <a href="/"><img className="social-link" src={x} alt="" /></a>
         </div>
       </footer>
-        <Outlet />
     </>
   );
 }
