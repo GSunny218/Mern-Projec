@@ -16,12 +16,13 @@ import nvidialogo from "../assets/nvidia.png"; // Importing Nvidia image
 import teslalogo from "../assets/tesla-logo.png"; // Importing Tesla image
 import applelogo from "../assets/apple-logo.png"; // Importing Apple image
 import sql from "../assets/sql.png"; // Importing SQL image
+import { useNavigate } from "react-router-dom";
 import { Link, Outlet } from "react-router-dom"; // Importing Link for navigation
 
 const FirstPage = () => {
     const lessThan = "<";
     const greaterThan = ">";
-    const slash = "/";
+    const slash = "/"; // Using useNavigate for programmatic navigation
   return (
     <>
       <header>
@@ -32,7 +33,7 @@ const FirstPage = () => {
             </div>
             <div  className="nav-links">
                 <div>
-                    <a href="about"  className="about">About Us</a>
+                    <a href="/"  className="about">About Us</a>
                 </div>
                 <div>
                     <a to="contact"  className="contact">Contact</a>
@@ -67,7 +68,7 @@ const FirstPage = () => {
             </div>
         </section>
         <section className="section-4">
-            <p className="section-4-description-1">Get Job In Large Company</p>
+            <p className="section-4-description-1">Get Job In Large Companies</p>
             <div>
                 <marquee behavior="scroll" direction="left">
                     <img className="amazon-logo" src={amazonlogo} alt="Amazon" />
@@ -81,7 +82,7 @@ const FirstPage = () => {
             </div>
         </section>
       </main>
-      <footer className="footer">
+      <footer className="footer-1">
         <div className="footer-content">
             <p>&copy; 2023 SkillByte. All rights reserved.</p>
             <div className="footer-links">
@@ -91,10 +92,10 @@ const FirstPage = () => {
         </div>
         
         <div className="footer-social">
-            <a href="/"><img className="social-link" src={fb} alt="" /></a>
-            <a href="/"><img className="social-link" src={insta} alt="" /></a>
-            <a href="/"><img className="social-link" src={linkedin} alt="" /></a>
-            <a href="/"><img className="social-link" src={x} alt="" /></a>
+            <a href="/"><img className="social-link" src={fb} alt="Facebook" /></a>
+            <a href="/"><img className="social-link" src={insta} alt="Instagram" /></a>
+            <a href="/"><img className="social-link" src={linkedin} alt="Linked" /></a>
+            <a href="/"><img className="social-link" src={x} alt="X" /></a>
         </div>
       </footer>
     </>

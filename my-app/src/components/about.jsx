@@ -32,6 +32,7 @@ const About = () => {
                         <div className="rectangle-2">
                             <h1>Jayam Vishwakarma</h1>
                             <h2>React Developer, Front-End Developer</h2>
+                            <h3>Role: React</h3>
                             <p>
                                 Jayam Vishakarma is a passionate React developer with a keen interest in building dynamic and responsive web applications. 
                                 With a strong foundation in JavaScript and React, Jayam is dedicated to creating user-friendly interfaces and enhancing user experiences.
@@ -49,6 +50,7 @@ const About = () => {
                         <div className="rectangle-3">
                             <h1>Prashant Tiwari</h1>
                             <h2>Backend Developer,  Data-Base Manager</h2>
+                            <h3>Role: Monogo DB</h3>
                             <p>
                                 Prashant is a skilled backend developer and database manager with expertise in building robust server-side applications. 
                                 With a focus on performance and scalability, Prashant ensures that the backend systems are efficient and reliable, supporting seamless user experiences.

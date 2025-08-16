@@ -1,0 +1,133 @@
+h1 {
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.head-div {
+    display: flex;
+    background-color: #390068;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.app-logo:hover {
+    cursor: pointer;
+    animation: LogoAnimation 2s infinite;
+}
+
+@keyframes LogoAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.main-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-container {
+    background-color: #f0f0f000;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    align-items: center;
+    background-color: rgba(133, 67, 255, 0.842);
+    border-radius: 60px;
+}
+
+.contact-info {
+    background-image: linear-gradient(to right, #3b0269, #b907ff);
+    padding: 20px;
+    border-radius: 0 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #3e0068;
+    color: black;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.input[type="text"],
+.input[type="email"] {
+    background-color: #3e0068;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button {
+    background-color: #3e0068;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90px;
+    height: 60px;
+}
+
+button:hover {
+    background-color: #5a007f;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    background-image: linear-gradient(to right, #000000, #ffffff);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-h2 {
+    margin-right: 340px;
+    color: #3e0068;
+    margin-bottom: 20px;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.feed-textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #3e0068;
+    border-radius: 4px;
+    color: rgb(156, 0, 247);
+}
+
+textarea[input="text"] {
+    border: #b907ff;
+    color: black;
+    font-size: 100px;
+}
