@@ -83,8 +83,8 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 90px;
-    height: 60px;
+    width: 190px;
+    height: 80px;
 }
 
 button:hover {

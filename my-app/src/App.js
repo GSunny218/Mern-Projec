@@ -1,19 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { navigate, useNavigate } from 'react-router-dom';
+import AppRouter from './components/approuter';
+ // Importing BrowserRouter for routing
 import FirstPage from './components/firstPage';
-import Access from './components/access';
-import About from './components/about';
-import Contact from './components/contact';
 
 function App() {
   //const navigate = useNavigate();
   return (
     <>
+      
+        <AppRouter/>
+      
+      
       {/*<FirstPage />*/}
       {/*<About />*/}
       {/*<Access/>*/}
-      <Contact />
+      {/*<Login />*/}
+      {/*<Contact />*/}
       {/* Uncomment the following lines to enable routing */}
       {/*<BrowserRouter>
         <Routes>

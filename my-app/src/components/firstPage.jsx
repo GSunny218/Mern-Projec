@@ -16,8 +16,9 @@ import nvidialogo from "../assets/nvidia.png"; // Importing Nvidia image
 import teslalogo from "../assets/tesla-logo.png"; // Importing Tesla image
 import applelogo from "../assets/apple-logo.png"; // Importing Apple image
 import sql from "../assets/sql.png"; // Importing SQL image
-import { useNavigate } from "react-router-dom";
-import { Link, Outlet } from "react-router-dom"; // Importing Link for navigation
+import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import Contact from "./Contact";
+import About from "./About";
 
 const FirstPage = () => {
     const lessThan = "<";
@@ -29,16 +30,27 @@ const FirstPage = () => {
         <nav className="navbar">
             <div className="logo-container">
                 <img src={applogo} className="applogo" alt="Python" />
-                <div className="app-name"><span className="less-than">{lessThan}</span><span className="slash">{slash}</span><span className="app-head-title">SkillBtyes</span><span className="greater-than">{greaterThan}</span></div>
+                <div className="app-name"><span className="less-than">{lessThan}</span><span className="slash">{slash}</span><span className="app-head-title">SkillBtye</span><span className="greater-than">{greaterThan}</span></div>
             </div>
             <div  className="nav-links">
                 <div>
-                    <a href="/"  className="about">About Us</a>
+                    <select>
+                        <option value="" disabled selected>Available Courses</option>
+                        <option value="python" disabled>Python</option>
+                        <option value="html" disabled>HTML</option>
+                        <option value="css" disabled>CSS</option>
+                        <option value="sql"disabled>SQL</option>
+                    </select>
                 </div>
-                <div>
-                    <a to="contact"  className="contact">Contact</a>
-                </div>
-                <button className="get-started-button">Get Started</button>
+                    <div>
+                        <Link to="/about"  className="about">About Us</Link>
+                    </div>
+                    <div>
+                        <Link to="/contact"  className="contact">Contact</Link>
+                    </div>
+                    <Link to="/access" className="get-started-button">Get Started</Link>
+
+                    
             </div>
         </nav>
       </header>
@@ -48,7 +60,7 @@ const FirstPage = () => {
             <h5 className="section-1-description">
                 Your journey to mastering skills starts here.
             </h5>
-            <button className="get-started-button2">Get Started</button>
+            <Link to="/access" className="get-started-button2">Get Started</Link>
         </section>
         <section className="section-2">
             <div className="skills-section">
