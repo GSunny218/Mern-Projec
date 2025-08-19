@@ -6,7 +6,11 @@ import image3 from "../assets/image-3.png";
 import image4 from "../assets/image-4.png";
 import image5 from "../assets/image-5.png";
 import "./access.css"; // Assuming you have a CSS file for styles
+import { useNavigate } from "react-router-dom";
 const Access = () => {
+
+    const navigate = useNavigate();
+
     const texts = [
         "Learning to code opens up a world of opportunities, allowing you to create, innovate, and solve problems in ways that were previously unimaginable.",
         "Build websites, apps, and software that can impact millions of lives.",
@@ -68,6 +72,9 @@ const Access = () => {
         margin: '0 0 20px 450px',
     };
 
+    const handleClick = () => {
+        navigate('/layout');
+    };
 
     return (
         <>
@@ -89,7 +96,7 @@ const Access = () => {
                     </p>
                 </div>
                 <div className="button-container">
-                    <button className="create-ac">Create New Account</button>
+                    <button onClick={handleClick} className="create-ac">Create New Account</button>
                     <button className="exist-aa">I Already Have An Account</button>
                 </div>
             </main>

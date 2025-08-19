@@ -4,6 +4,8 @@ import FirstPage from '../components/firstPage';
 import Contact from '../components/Contact';
 import AboutUs from '../components/About';
 import Access from '../components/access';
+import Layout from '../components/layout';
+import Login from './login';
 
 const AppRouter = () => {
   return (
@@ -13,6 +15,8 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/access" element={<Access/>}/>
+        <Route path="/layout" element={<Layout />}/>
+        <Route path="/login" element={<Login />}/>
       </Routes>
     </BrowserRouter>
   );
