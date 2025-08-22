@@ -15,14 +15,14 @@ const Layout = () => {
         5: ''
     });
 
-    const totalQuestion = 5;   //Total Questions that 
+    //const totalQuestion = 5;   //Total Questions that 
 
-    const ProgressBar = () => {  //ProgressBar for user's progress
+    const ProgressBar = (props) => {  //ProgressBar for user's progress
         return (
             <div className="progress-bar">
                 <div 
                     className="progress" 
-                    style={{width: `${(currentQuestion/totalQuestion) * 100}%`}}
+                    style={{width: `${(currentQuestion/props.totalQuestion) * 100}%`}}
                 ></div>
             </div>
         );
@@ -204,7 +204,7 @@ const Layout = () => {
     return (
         <>
         <div className='quest-page'>
-            <ProgressBar/>
+            <ProgressBar totalQuestion={5}/>
             <div className='div-quest'>
                 {renderQuestion()}
             </div>
@@ -216,5 +216,4 @@ const Layout = () => {
         </>
     );
 }
-
 export default Layout;

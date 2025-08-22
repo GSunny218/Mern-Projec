@@ -22,6 +22,37 @@
     margin: 20px;
 }
 
+.circle-1 {
+    border: rgb(251, 255, 0) solid 2px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 0);
+    z-index: 10;
+    float: left;
+    box-shadow: 0 0 10px 10px  rgba(248, 255, 47, 0.5);
+}
+
+.rectangle-1 {
+    text-align: center;
+    height: 400px;
+    width: 890px;
+    background-image: linear-gradient(60deg, rgb(156, 161, 28), rgb(232, 255, 83), rgb(226, 255, 36));
+    border: 2px solid rgb(242, 255, 0);
+    border-radius: 10px 150px 10px 150px;
+    box-shadow: 10px 10px 0 0 rgba(238, 255, 0, 0.5);
+    top: 0;
+    left: 0;
+    float: right
+}
+
+.sunny-pic {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -10;   
+}
+
 .circle-2 {
     border: rgb(192, 201, 255) solid 2px;
     height: 400px;
@@ -92,3 +123,39 @@ section {
     text-align: center;
 }
 
+.circle-4 {
+    border: rgb(149, 0, 255) solid 2px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(154, 0, 250); 
+    z-index: 10;
+    float: left;
+    box-shadow: 0 0 10px 10px  rgba(185, 35, 250, 0.589);
+}
+
+.rectangle-4 {
+    height: 400px;
+    width: 890px;
+    background-image: linear-gradient(60deg, rgb(147, 0, 163), rgb(235, 122, 255), rgb(206, 9, 255));
+    border: 2px solid rgb(97, 0, 119);
+    border-radius: 10px 150px 10px 150px ;
+    box-shadow: 10px 10px 0 0 rgba(247, 0, 255, 0.5) ;
+    top: 0;
+    left: 0;
+    float: right;
+    text-align: center;
+}
+
+.anurudhh-pic {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

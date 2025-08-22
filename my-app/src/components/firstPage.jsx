@@ -17,8 +17,6 @@ import teslalogo from "../assets/tesla-logo.png"; // Importing Tesla image
 import applelogo from "../assets/apple-logo.png"; // Importing Apple image
 import sql from "../assets/sql.png"; // Importing SQL image
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import Contact from "./Contact";
-import About from "./About";
 
 const FirstPage = () => {
     const lessThan = "<";
