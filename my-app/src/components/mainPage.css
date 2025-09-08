@@ -1,0 +1,103 @@
+.navbar-mp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px 20px;
+    background-color: #2a0229;
+    color: white;
+    width: 97%;
+    border: 50px;
+    border-bottom: #380040 solid 5px;
+}
+
+.upper-navbar {
+    height: 60px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+.lower-navbar {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-body {
+    padding: 20px;
+    background-color: #4d0059;
+    height: 600px;
+    width: 97%;
+}
+
+.courses {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo-container-mp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: white;
+    border: #2a0229 solid 5px;
+    border-radius: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(180deg, #5c0066, #8a2a87, #5c0066); ;
+}
+
+.logo-container-mp:hover {
+    background-color: #380040;
+    border: #effa88 solid 3px;
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.python-logo-mp {
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px 10px 10px;
+    border-radius: 19px;
+}
+
+.html-logo-mp {
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px 10px 10px;
+    border-radius: 19px;
+}
+
+.css-logo-mp {
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px 10px 10px;
+    border-radius: 19px;
+}
+
+.sql-logo-mp {
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px 10px 10px;
+    border-radius: 19px;
+}
+
+.footer-mp, .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 500px;
+    background-color: #2a0229;
+    color: white;
+    width: 100%;
+    border-top: #380040 solid 5px;
+}

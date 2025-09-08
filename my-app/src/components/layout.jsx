@@ -204,7 +204,7 @@ const Layout = () => {
     return (
         <>
         <div className='quest-page'>
-            <ProgressBar totalQuestion={5}/>
+            <ProgressBar totalQuestion={5}/>     {/*Render ProgressBar component*/}
             <div className='div-quest'>
                 {renderQuestion()}
             </div>

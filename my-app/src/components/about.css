@@ -8,18 +8,26 @@
 .about-title {
     font-size: 24px;
     font-weight: bold;
-    margin-left: 500px;
+    margin: 0 0 0 20px;
     color: aliceblue;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.back-arrow {
-    font-size: 15px;
-    cursor: pointer;
-    color: aliceblue;
-    text-decoration: none;
+.about-description {
+    text-align: center;
+    font-size: 18px;
     margin: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mission-description {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .circle-1 {
@@ -35,7 +43,7 @@
 
 .rectangle-1 {
     text-align: center;
-    height: 400px;
+    height: 450px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(156, 161, 28), rgb(232, 255, 83), rgb(226, 255, 36));
     border: 2px solid rgb(242, 255, 0);
@@ -43,7 +51,13 @@
     box-shadow: 10px 10px 0 0 rgba(238, 255, 0, 0.5);
     top: 0;
     left: 0;
-    float: right
+    float: right;
+    color: black;
+}
+
+.dev-intro {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sunny-pic {
@@ -66,14 +80,12 @@
 
 .rectangle-2 {
     text-align: center;
-    height: 400px;
+    height: 450px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(28, 48, 161), rgb(83, 109, 255), rgb(36, 138, 255));
     border: 2px solid rgb(25, 0, 255);
     border-radius: 10px 150px 10px 150px;
     box-shadow: 10px 10px 0 0 rgba(0, 195, 255, 0.5);
-    top: 0;
-    left: 0;
     float: right
 }   
 
@@ -91,9 +103,7 @@
     z-index: -10;
 }
 
-.dev-2 {
-    display: flex;
-}
+
 
 section {
     margin: 50px
@@ -111,7 +121,7 @@ section {
 }
 
 .rectangle-3 {
-    height: 400px;
+    height: 430px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(0, 163, 22), rgb(60, 255, 0), rgb(9, 255, 71));
     border: 2px solid rgb(0, 119, 0);
@@ -135,7 +145,7 @@ section {
 }
 
 .rectangle-4 {
-    height: 400px;
+    height: 430px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(147, 0, 163), rgb(235, 122, 255), rgb(206, 9, 255));
     border: 2px solid rgb(97, 0, 119);
