@@ -101,3 +101,42 @@
     width: 100%;
     border-top: #380040 solid 5px;
 }
+
+.lang-intro-py {
+    font-size: 14px;
+    margin-left: 100px;
+    color: #d1d1d1;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lang-intro-html {
+    font-size: 14px;
+    margin-left: 105px;
+    color: #d1d1d1;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lang-intro-css {
+    font-size: 14px;
+    margin-left: 120px;
+    color: #d1d1d1;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lang-intro-sql {
+    font-size: 14px;
+    margin-left: 121px;
+    color: #d1d1d1;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.misc-text {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
