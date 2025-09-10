@@ -1,6 +1,13 @@
 import React from "react";
 
 const HtmlPage = () => {
+    const lesson1 = () => {
+        return(
+            <>
+                <div>Intro to HTML - Get Started</div>
+            </>
+        );
+    }
     return(
         <>
             <div>

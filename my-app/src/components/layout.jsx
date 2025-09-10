@@ -36,7 +36,7 @@ const Layout = () => {
         });
     };
 
-    const handleClick = () => {
+    const handleClick = () => { //Not used yet
         navigate('/login');
     };
 
