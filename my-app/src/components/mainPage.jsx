@@ -5,6 +5,10 @@ import html from "../assets/html-logo.png";
 import css from "../assets/css-logo.png";
 import sql from "../assets/sql.png";
 import { useNavigate } from "react-router-dom";
+import cssCertificate from "../assets/Css-certificate.png";
+import htmlCertificate from "../assets/Html-certificate.png";
+import pythonCertificate from "../assets/Python-certificate.png";
+import sqlCertificate from "../assets/Sql-certificate.png";
 
 const MainPage = () => {
     const navigate = useNavigate();
@@ -52,6 +56,12 @@ const MainPage = () => {
                         <div className="footer-text">
                             <div><h1>Learn, Study, Research and Build</h1></div>
                             <div><h2>Get Your Personalized Certificate of Every Course</h2></div>
+                        </div>
+                        <div className="certificate-container">
+                            <img className="certificate-pic" src={pythonCertificate} alt="Python Certificate Demo" />
+                            <img className="certificate-pic" src={htmlCertificate} alt="HTML Certificate Demo" />
+                            <img className="certificate-pic" src={cssCertificate} alt="CSS Certificate Demo" />
+                            <img className="certificate-pic" src={sqlCertificate} alt="SQL Certificate Demo" />
                         </div>
                         <div><h6>SkillsByte &#169; 2024 All Rights Reserved</h6></div>
                     </div>

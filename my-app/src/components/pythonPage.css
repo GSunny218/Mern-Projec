@@ -39,7 +39,7 @@
     height: 700px;
     width: 500px;
     background-color: #30002b;
-    border: #e1d0e0 solid 5px;
+    
 }
 
 .l1 {
@@ -227,7 +227,13 @@
 }
 
 p {
-    margin-top: 30px;
+    margin-top: 16px;
+}
+
+.lesson-part p {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: #ffffff;
 }
 
 .course-title div.completed {
@@ -243,9 +249,9 @@ p {
 
 .syntax {
     font-family: 'Courier New', Courier, monospace;
-    border-radius: 4px;
     font-size: 1.1rem;
     margin-left: 20px;
+     margin-top: 16px;
 }
 
 .box-image {

@@ -11,6 +11,7 @@ import PythonPage from './pythonPage';
 import HtmlPage from './htmlPage';
 import CssPage from './cssPage';
 import SqlPage from './sqlPage';
+import Aha from './aha';
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,7 @@ const AppRouter = () => {
         <Route path='/htmlPage' element={<HtmlPage />}/>
         <Route path='/cssPage' element={<CssPage />}/>
         <Route path='/sqlPage' element={<SqlPage />}/>
+        <Route path='/aha' element={<Aha />}/>
       </Routes>
     </BrowserRouter>
     </>

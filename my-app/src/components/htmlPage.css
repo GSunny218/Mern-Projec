@@ -1,0 +1,282 @@
+.python-page-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #30002b;
+}
+
+.python-page {
+    height: 100vh;
+    width: 100%;
+    background-color: #30002b;
+}
+
+.header-py {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    background-color: #2a0229;
+    color: white;
+    border-bottom: #380040 solid 5px;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 800px;
+    width: 100%;
+    background-color: #30002b;
+}
+
+.course-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 700px;
+    width: 500px;
+    background-color: #30002b;
+}
+
+.l1 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l2 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l3 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l4 {
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    width: 420px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l5 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l6 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l7 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.l8 {
+    font-size: 20px;
+    width: 420px;
+    margin: 20px 0 0 20px;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: #e41aff solid 3px;
+    padding: 5px 9px 5px 9px;
+    background-color: #e41aff1a;
+    border-radius: 10px;
+}
+
+.lesson-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hr-line {
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid #e1d0e0;
+}
+
+.course-title div {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.course-title div:hover {
+    background-color: #b500c6;
+    transform: scale(1.02);
+}
+
+.course-title div.active {
+    background-color: #a700cd;
+    font-weight: bold;
+    border: rgb(252, 252, 128) solid 5px;
+}
+
+.lesson-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 97%;
+}
+
+.select-lesson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.lesson-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(254, 1, 233, 0.1);
+    margin: 20px;
+    background-color: #21202080;
+    color: #ffffff;
+}
+
+.lesson-name {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.python-image {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px 0 0 450px;
+}
+
+p {
+    margin-top: 16px;
+}
+
+.lesson-part p {
+    margin-top: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.course-title div.completed {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.course-title div.completed:hover {
+    background-color: #FFE55C;
+}
+
+.syntax {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    margin-left: 20px;
+     margin-top: 16px;
+}
+
+.box-image {
+    width: 200px;
+    height: auto;
+    margin: 20px 0 0 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+li {
+    margin-top: 10px;
+}
+
+.string-value {
+    color: rgb(85, 255, 136);
+}
+
+.select-lesson {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 30px;
+    border: #f9d5fc 2px dashed;
+    padding: 0 40px;
+}
