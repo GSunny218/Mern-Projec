@@ -1,57 +1,130 @@
-import React from "react";
-import "./contact.css"; // a CSS file for styles
-import applogo from "../assets/applogo2.PNG"; // an image for the logo
+import React, { useState } from "react";
+import "./contact.css";
 
 const Contact = () => {
-    return (
-        <>
-            <header>
-                <div className="head-div">
-                    <img src={applogo} alt="App Logo" className="app-logo" />
-                    <h1>Contact Us</h1>
-                </div>
-            </header>
-            <main>
-                <h2>If you have any questions or feedback, feel free to reach out!</h2>
-                <div className="main-div">
-                    <div className="contact-info">
-                        <h3>Direct Contact To Us</h3>
-                        <p>If your problem is huge</p>
-                        <p>Contact us at:</p>
-                        <p>Email: <b>skillsbyte100@gmail.com</b></p>
-                        <p>Phone: <b>+91 9321070483</b></p>
-                        <p>Address: <b>Sion Trombay, Jyotiba Phule Road, Chembur, Mumbai, Maharashtra, India</b></p>
-                        <h6>We are here to help you!</h6>
-                    </div>
-                    <div className="contact-container">
-                        <form className="contact-form">
-                            <h2>Greivance and Complaints, If any</h2>
+  const [complaintData, setComplaintData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-                            <label htmlFor="name">Name:</label>
-                            <input type="text" placeholder="Please Enter Your Name Here" id="name" name="name" required />
-                            
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" placeholder="Please Enter Your Email Here" id="email" name="email" required />
-                            
-                            <label htmlFor="message">Message:</label>
-                            <textarea id="message" placeholder="Please Leave A Messege" name="message" required></textarea>
-                            
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </main>
-            <footer className="footer"> 
-                <h2 className="footer-h2">Feedback</h2>
-                <form className="footer-form">
-                    <label htmlFor="feedback">Your Feedback:</label>
-                    <textarea type="text" id="feedback" placeholder="Commit Your Feedback About Our App" name="feedback" className="feed-textarea" rows="4" cols='100' required></textarea>
-                    
-                    <button type="submit">Submit Feedback</button>
-                </form>
-            </footer>
-        </>
-    );
-}
+  const [feedbackData, setFeedbackData] = useState({
+    complaint: "",
+    feedback: "",
+  });
+
+  const [message, setMessage] = useState("");
+
+  // Submit complaint handler
+  const submitComplaint = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/api/complaints", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(complaintData),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        alert("✅ Complaint submitted successfully!");
+        setMessage("Complaint submitted successfully!");
+        setComplaintData({ name: "", email: "", message: "" });
+      } else {
+        alert(`❌ ${data.error || "Failed to submit complaint"}`);
+        setMessage(data.error || "Failed to submit complaint");
+      }
+    } catch (err) {
+      alert("⚠️ Network error: Complaint not submitted");
+      setMessage("Network error: Complaint not submitted");
+    }
+  };
+
+  // Submit feedback handler
+  const submitFeedback = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/api/feedbacks", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(feedbackData),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        alert("✅ Feedback submitted successfully!");
+        setMessage("Feedback submitted successfully!");
+        setFeedbackData({ complaint: "", feedback: "" });
+      } else {
+        alert(`❌ ${data.error || "Failed to submit feedback"}`);
+        setMessage(data.error || "Failed to submit feedback");
+      }
+    } catch (err) {
+      alert("⚠️ Network error: Feedback not submitted");
+      setMessage("Network error: Feedback not submitted");
+    }
+  };
+
+  return (
+    <div className="main-div">
+      {/* Contact Information */}
+      <div className="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: <b>skillsbyte100@gmail.com</b></p>
+        <p>Phone: <b>+91 9321070483</b></p>
+        <p>Address: <b>Sion Trombay, Jyotiba Phule Road, Chembur, Mumbai, Maharashtra, India</b></p>
+      </div>
+      
+      {/* Complaint Form */}
+      <div className="contact-container">
+        <h3>Submit a Grievance (Complaint)</h3>
+        <form onSubmit={submitComplaint} className="contact-form">
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={complaintData.name}
+            onChange={(e) => setComplaintData({ ...complaintData, name: e.target.value })}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            value={complaintData.email}
+            onChange={(e) => setComplaintData({ ...complaintData, email: e.target.value })}
+            required
+          />
+          <textarea
+            placeholder="Message"
+            value={complaintData.message}
+            onChange={(e) => setComplaintData({ ...complaintData, message: e.target.value })}
+            required
+          />
+          <button type="submit">Submit Complaint</button>
+        </form>
+      </div>
+
+      {/* Feedback Form */}
+      <div className="contact-container">
+        <h3>Submit Feedback</h3>
+        <form onSubmit={submitFeedback} className="contact-form">
+          <input
+            type="text"
+            placeholder="Complaint reference (optional)"
+            value={feedbackData.complaint}
+            onChange={(e) => setFeedbackData({ ...feedbackData, complaint: e.target.value })}
+          />
+          <textarea
+            placeholder="Your Feedback"
+            value={feedbackData.feedback}
+            onChange={(e) => setFeedbackData({ ...feedbackData, feedback: e.target.value })}
+            required
+          />
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+
+      {/* Response Message (shown for both) */}
+      {message && <p className="response-message">{message}</p>}
+    </div>
+  );
+};
 
 export default Contact;
