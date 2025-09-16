@@ -258,7 +258,7 @@ const HtmlPage = () => {
                         </ul>
                         <p>These are some commonly used input types. There are many more input types available.</p>
                         <p>A one more commonly used attribute is placeholder in input tag. 'placeholder' basically, give hint to user. Like above:</p>
-                        <p>For example: <span className="less-than-h">{lessThan}</span>input type=<span className="string-value">"text"</span> placeholder=<span className="string-value">"Enter text"</span> <span className="slash-h">/</span><span className="greater-than-h">{greaterThan}</span></p>
+                        <p>For example: <span className="less-than-h">{lessThan}</span>input type=<span className="string-value">"text"</span> placeholder=<span className="string-value">"Enter text"</span> <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></p>
                     </div>
                 );
             case 2:
