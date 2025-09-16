@@ -281,17 +281,17 @@ li {
     padding: 0 40px;
 }
 
-.less-than {
+.less-than-h {
     color: rgb(255, 44, 44);
     font-size: 1.1rem;
 }
 
-.greater-than {
+.greater-than-h {
     color: rgb(255, 44, 44);
     font-size: 1.1rem;
 }
 
-.slash {
+.slash-h {
     color: #9300a0;
     font-size: 1.1rem;
 }

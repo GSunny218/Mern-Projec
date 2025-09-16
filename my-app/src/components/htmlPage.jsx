@@ -111,13 +111,13 @@ const HtmlPage = () => {
                         <h2>Opening tag and Closing tag</h2>
                         <p>HTML is not syntactical language, it's a <i>Markup Language</i>.</p>
                         <p>Each HTML tag has opening and closing tag, like,</p>
-                        <p className="syntax"><span className="less-than">{lessThan}</span>tag<span className="greater-than">{greaterThan}</span><span className="less-than">{lessThan}</span><span className="slash">{slash}</span>tag<span className="greater-than">{greaterThan}</span></p>
+                        <p className="syntax"><span className="less-than-h">{lessThan}</span>tag<span className="greater-than-h">{greaterThan}</span><span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>tag<span className="greater-than-h">{greaterThan}</span></p>
                         <p>Above, it's not a specific tag. it's just a example.</p>
                         <p>Tags like: p, span, div, heading tags, html, body, etc. have opening and closing tags.</p>
                         <h2>Void Tags</h2>
                         <p>HTML also has some special tags which don't have closing tag, such tags are called as <i>Void Tags</i></p>
                         <p>Fpr example:</p>
-                        <p><span className="less-than">{lessThan}</span>img <span className="slash">{slash}</span><span className="greater-than">{greaterThan}</span></p>
+                        <p><span className="less-than-h">{lessThan}</span>img <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></p>
                         <p>Here, img is void tags.</p>
                         <p>We have many tags like: link, meta, img, source, etc.</p>
                         <p>Please don't be scared! We learn this tags and it's uses in next lessons.</p>
@@ -130,7 +130,7 @@ const HtmlPage = () => {
                     <div className="lesson-part">
                         <h2>Paragraph Tag: p</h2>
                         <p>In HTML, p stands for paragraph. We simply write any text in tags</p>
-                        <div className="syntax"><span className="less-than">{lessThan}</span>p<span className="greater-than">{greaterThan}</span>Hi, I'm p tag<span className="less-than">{lessThan}</span><span className="slash">{slash}</span>p<span className="greater-than">{greaterThan}</span></div>
+                        <div className="syntax"><span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>Hi, I'm p tag<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span></div>
                     </div>
                 );
             case 3:

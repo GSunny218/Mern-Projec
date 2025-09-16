@@ -10,6 +10,9 @@ import { useNavigate } from "react-router-dom";
 const Access = () => {
 
     const navigate = useNavigate();
+    const ahaHandleClick = () => {
+        navigate('/aha');
+    }
 
     const texts = [
         "Learning to code opens up a world of opportunities, allowing you to create, innovate, and solve problems in ways that were previously unimaginable.",
@@ -97,7 +100,7 @@ const Access = () => {
                 </div>
                 <div className="button-container">
                     <button onClick={handleClick} className="create-ac">Create New Account</button>
-                    <button className="exist-aa">I Already Have An Account</button>
+                    <button onClick={ahaHandleClick} className="exist-aa">I Already Have An Account</button>
                 </div>
             </main>
         </>
