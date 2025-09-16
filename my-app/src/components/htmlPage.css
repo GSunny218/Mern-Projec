@@ -296,3 +296,46 @@ li {
     font-size: 1.1rem;
 }
 
+.web-output {
+    margin: 10px 0 0 0;
+    height: 200px;
+    width: 400px;
+    max-width: 1100px;
+    background-color: #d1d1d1;
+    border-radius: 4px;
+    color: #000;
+    padding: 2px;
+    box-shadow: 5px 10px  0 1px #8b8b8b;
+}
+
+.headings {
+    height: 400px;
+    margin: auto;
+}
+
+.h1-show, .h2-show, .h3-show, .h4-show, .h5-show, .h6-show {
+    text-align: center;
+    margin: none;
+    color: #000;
+}
+
+.h2-show {
+    margin: -9px;
+}
+
+.html-btn {
+    color: black;
+    background-color: rgb(140, 140, 140);
+    width: 120px;
+    height: 40px;
+    border: #666 1px solid;
+}
+
+.html-btn:hover {
+    background-color: #666;
+    color: #000;
+}
+
+.input-tag-h {
+    margin: 10px 0 0 20px;
+}

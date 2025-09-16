@@ -28,7 +28,7 @@ const HtmlPage = () => {
     };
     const lessonParts = {
         1: 3, // Lesson 1 has 3 parts
-        2: 3, // Lesson 2 has 3 parts
+        2: 5, // Lesson 2 has 3 parts
         3: 3, // Lesson 3 has 3 parts
         4: 4, // Lesson 4 has 4 parts
         5: 5, // Lesson 5 has 4 parts
@@ -116,7 +116,7 @@ const HtmlPage = () => {
                         <p>Tags like: p, span, div, heading tags, html, body, etc. have opening and closing tags.</p>
                         <h2>Void Tags</h2>
                         <p>HTML also has some special tags which don't have closing tag, such tags are called as <i>Void Tags</i></p>
-                        <p>Fpr example:</p>
+                        <p>For example:</p>
                         <p><span className="less-than-h">{lessThan}</span>img <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></p>
                         <p>Here, img is void tags.</p>
                         <p>We have many tags like: link, meta, img, source, etc.</p>
@@ -131,12 +131,102 @@ const HtmlPage = () => {
                         <h2>Paragraph Tag: p</h2>
                         <p>In HTML, p stands for paragraph. We simply write any text in tags</p>
                         <div className="syntax"><span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>Hi, I'm p tag<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span></div>
+                        <p>Output:</p>
+                        <div className="web-output">Hi, I'm p tag</div>
+                        <p>p tags is use for text that give information and anything else. You can write long paragraphs by usinh this p tags</p>
+                        <h2>Break tag: br</h2>
+                        <p>If developer wants to go on new-line programmatically in HTML, then he can use br tag, i.e., break</p>
+                        <div className="syntax"><span className="less-than-h">{lessThan}</span>br <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></div>
+                        <p>This break tags is also a void tags. You noticed that it doesn't have closing tag, it closes itself</p>
+                        <p>For example:</p>
+                        <div className="syntax"><span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span className="less-than-h">{lessThan}</span>br <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span></div>
+                        <p>Output:</p>
+                        <div className="web-output">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                        
                     </div>
                 );
             case 3:
                 return (
                     <div className="lesson-part">
-                        
+                        <h2>Headings</h2>
+                        <p>In HTML, we have heading tags from h1 to h6. Each heading is has their own size and font-weight</p>
+                        <p>Lists of heading tags</p>
+                        <ul>
+                            <li>h1</li>
+                            <li>h2</li>
+                            <li>h3</li>
+                            <li>h4</li>
+                            <li>h5</li>
+                            <li>h6</li>
+                        </ul>
+                        <p>Now let's see how they looks..</p>
+                        <div className="web-output headings">
+                            <h1 className="h1-show">h1</h1>
+                            <h2 className="h2-show">h2</h2>
+                            <h3 className="h3-show">h3</h3>
+                            <h4 className="h4-show">h4</h4>
+                            <h5 className="h5-show">h5</h5>
+                            <h6 className="h6-show">h6</h6>
+                        </div>
+                        <p>Each heading tags have opening and closing tags</p>
+                        <p>Just I mentioned earlier, each heading tags have there own size and font-weight. In simple words, bigger the number; smaller the size and font-weight</p>
+                        <h2>Emphasis tag</h2>
+                        <p>In HTML, if want to give light font-weoght to a word or make them little-bit tilt than we can use this 'em' tag</p>
+                        <p><span className="less-than-h">{lessThan}</span>em<span className="greater-than-h">{greaterThan}</span>Content<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>em<span className="greater-than-h">{greaterThan}</span></p>
+                        <p>It also having opening and closing tag.It's look like this: </p>
+                        <div className="web-output">
+                            <em>Content</em>
+                        </div>
+                        <h2>Strong tag</h2>
+                        <p>If we want a text that gives importance and also have bold text weigth, then we can use strong tag</p>
+                        <p><span className="less-than-h">{lessThan}</span>strong<span className="greater-than-h">{greaterThan}</span>Content<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>strong<span className="greater-than-h">{greaterThan}</span></p>
+                        <p>It also having opening and closing tag.It's look like this: </p>
+                        <div className="web-output">
+                            <strong>Content</strong>
+                        </div>
+                    </div>
+                );
+            case 4:
+                return (
+                    <div className="lesson-part">
+                        <h2>Buttons</h2>
+                        <p>In HTML5, we have in-built button tag that help us to use for various purposes. It can be use for submission of form, navigating to other web pages, etc.</p>
+                        <p>Button Tag: <span className="less-than-h">{lessThan}</span>button<span className="greater-than-h">{greaterThan}</span>Click me!<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>button<span className="greater-than-h">{greaterThan}</span></p>
+                        <div className="web-output">
+                            <button className="html-btn">Click me!</button>
+                        </div>
+                        <p>If you click on it then nothing happens. Because it require some tasks to do.</p>
+                        <h2>Links and Attributes</h2>
+                        <p>Now we will going to learn HTML's more parts. Each tags have different attributes. This attributes have different purposes. It can be anything.</p>
+                        <p>Links are use to navigate from one page to another page. Here we use anchor (a) tag.</p>
+                        <p className="syntax"><span className="less-than-h">{lessThan}</span>a href=<span className="string-value">"#"</span><span className="greater-than-h">{greaterThan}</span>Click me!<span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>a<span className="greater-than-h">{greaterThan}</span></p>
+                        <div className="web-output"><a href="">Click me!</a></div>
+                        <p>This tag has opening and closing tag</p>
+                        <p>It also clickable like button, but different then button and has blue font color and has been underlined automatically</p>
+                        <p>You already noticed that it has an attribute that called as href (stands for <mark>hypertext resource</mark>)</p>
+                        <p>This href attribute take URL (Uniform Resource Locator) that take user to other webpages on internet.</p>
+                        <p>But here we given "#" as a value that it never goes anywhere else</p>
+                    </div>
+                );
+            case 5:
+                return (
+                    <div className="lesson-part">
+                        <h2>Image Tag: img</h2>
+                        <p>Now we learn how to take an image on webpages. You have seen many websites that have images.</p>
+                        <p>Good images have good user interactions. Use loves images</p>
+                        <p className="syntax"><span className="less-than-h">{lessThan}</span>img src=<span className="string-value">""</span> <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></p>
+                        <p>Image tag has opening and closing tag. It has src attribute (src stands for <mark>source</mark> )</p>
+                        <p>src attribute used for giving to image source to webpage.</p>
+                        <p className="syntax"><span className="less-than-h">{lessThan}</span>img src=<span className="string-value">"https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8="</span> alt=<span className="string-value">""</span> <span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span></p>
+                        <div className="web-output">
+                            <img width={'250px'} src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=" alt="nature image" />
+                        </div>
+                        <p>Here we took this image from internet. Also we can make our own images to fetch on website</p>
+                        <p>In image tag, one more attribute 'alt' use to give alternative name to image. 'alt' stands for <mark>Alternative</mark> .</p>
+                        <p>If no image provided or unable to load on webpage than this alt attribute envoled. Give a text to image. Like below</p>
+                        <div className="web-output">
+                            <img src="" alt="Nature Image" />
+                        </div>
                     </div>
                 );
             default:
@@ -149,26 +239,35 @@ const HtmlPage = () => {
             case 1:
                 return (
                     <div className="lesson-part">
-                        <h2>What is Print Statement?</h2>
-                        <p>The print() function in Python is used to display output on the console or terminal. It can print text, numbers, variables, and other data types. The output is displayed as a string representation of the data.</p>
-                        <h3>Syntax of Print Statement</h3>
-                        <p className="syntax">print(value1, value2)</p>
-                        <p>Here, 'value1, value2, ...' are the values you want to print.</p>
-                        <h3>Now here, we will print "Hello, World"</h3>
-                        <p>It will print in console when you execute the code.</p>
-                        <p className="syntax">print(<span className="string-value">"Hello, World"</span>)</p>
-                        <p>Output: Hello, World</p>
+                        <h2>Input</h2>
+                        <p>You had seen many websites takes take user's feedback, some text or input in a box-like container</p>
+                        <p>HTML provides us a in-built input tag to take user's input. </p>
+                        <p>Tags: <span className="less-than-h">{lessThan}</span>input type=<span className="string-value">""</span> <span className="slash-h">/</span><span className="greater-than-h">{greaterThan}</span></p>
+                        <p>Mainly input tags has attribute called 'type'. It takes different values</p>
+                        <h2>Type Values</h2>
+                        <ul>
+                            <li>text: Takes normal text input <div className="web-output"><input className="input-tag-h" type="text" placeholder="Enter text" /></div></li>
+                            <li>button: Takes button-like input <div className="web-output"><input className="input-tag-h" type="button" value="button" /></div></li>
+                            <li>checkbox: Takes checkbox-like input <div className="web-output"><input className="input-tag-h" type="checkbox" /></div></li>
+                            <li>radio: Takes radio-like input <div className="web-output"> Select <input className="input-tag-h" type="radio" /></div></li>
+                            <li>color: Takes color-like input <div className="web-output"><input className="input-tag-h" type="color" /></div></li>
+                            <li>date: Takes date-like input <div className="web-output"><input className="input-tag-h" type="date" /></div></li>
+                            <li>email: Takes email-like input <div className="web-output"><input className="input-tag-h" type="email" /></div></li>
+                            <li>file: Takes file-like input <div className="web-output"><input className="input-tag-h" type="file" /></div></li>
+                            <li>password: Takes password-like input <div className="web-output"><input className="input-tag-h" type="password" placeholder="Enter password" /></div></li>
+                        </ul>
+                        <p>These are some commonly used input types. There are many more input types available.</p>
+                        <p>A one more commonly used attribute is placeholder in input tag. 'placeholder' basically, give hint to user. Like above:</p>
+                        <p>For example: <span className="less-than-h">{lessThan}</span>input type=<span className="string-value">"text"</span> placeholder=<span className="string-value">"Enter text"</span> <span className="slash-h">/</span><span className="greater-than-h">{greaterThan}</span></p>
                     </div>
                 );
             case 2:
                 return (
                     <div className="lesson-part">
-                        <h2>Printing Variables</h2>
-                        <p>You can also print the value of variables using the print() function. For example,</p>
-                        <p className="syntax">city_name = <span className="string-value">"Mumbai"</span> <br/>
-                        print(city_name)</p>
-                        <p>Output: Mumbai</p>
-                        <p>Here, the value of the variable 'city_name' is printed using the print() function.</p>
+                        <h2>Containers</h2>
+                        <p>We going to learn how to make container that holds many HTML element tags. To make container we simply use <strong>'div'</strong> tag</p>
+                        <p>'div' tag are used to group the all elements in it.</p>
+                        <p>Tag: <span className="less-than-h">{lessThan}</span>div<span className="greater-than-h">{greaterThan}</span></p>
                     </div>
                 );
             case 3:
@@ -384,7 +483,7 @@ const HtmlPage = () => {
                 <div className="lesson-content">
                     <div>
                         <div className="lesson-name">Basic HTML</div>
-                        <div><ProgressBar1 totalParts={3}/></div>
+                        <div><ProgressBar1 totalParts={5}/></div>
                     </div>
                     <hr className="hr-line"/>
                     <div>{renderPart2()}</div>
@@ -416,7 +515,7 @@ const HtmlPage = () => {
             <>
                 <div className="lesson-content">
                     <div>
-                        <div className="lesson-name">Print Statement and Console</div>
+                        <div className="lesson-name">Intermediate HTML</div>
                         <div><ProgressBar1 totalParts={3}/></div>
                     </div>
                     <hr className="hr-line"/>
@@ -553,7 +652,7 @@ const HtmlPage = () => {
                                 <div onClick={() => handleLessonClick(3)} 
                                     className={`l3 ${currentLesson === 3 ? 'active' : ''} ${completedLessons.includes(3) ? 'completed' : ''}`}>Intermediate HTML</div>
                                 <div onClick={() => handleLessonClick(4)} 
-                                    className={`l4 ${currentLesson === 4 ? 'active' : ''} ${completedLessons.includes(4) ? 'completed' : ''}`}>Sematic HTML</div>
+                                    className={`l4 ${currentLesson === 4 ? 'active' : ''} ${completedLessons.includes(4) ? 'completed' : ''}`}>Semantic HTML</div>
                                 <div onClick={() => handleLessonClick(5)} 
                                     className={`l5 ${currentLesson === 5 ? 'active' : ''} ${completedLessons.includes(5) ? 'completed' : ''}`}>Advance HTML - Hidden Tags</div>
                             </div>
