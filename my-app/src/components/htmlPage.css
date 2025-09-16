@@ -216,7 +216,7 @@
     text-align: center;
 }
 
-.python-image {
+.html-image {
     width: 100px;
     height: 100px;
     margin: 20px 0;
@@ -280,3 +280,19 @@ li {
     border: #f9d5fc 2px dashed;
     padding: 0 40px;
 }
+
+.less-than {
+    color: rgb(255, 44, 44);
+    font-size: 1.1rem;
+}
+
+.greater-than {
+    color: rgb(255, 44, 44);
+    font-size: 1.1rem;
+}
+
+.slash {
+    color: #9300a0;
+    font-size: 1.1rem;
+}
+

@@ -12,6 +12,7 @@ import HtmlPage from './htmlPage';
 import CssPage from './cssPage';
 import SqlPage from './sqlPage';
 import Aha from './aha';
+import AIBot from './aibot';
 
 const AppRouter = () => {
   return (
@@ -30,6 +31,7 @@ const AppRouter = () => {
         <Route path='/cssPage' element={<CssPage />}/>
         <Route path='/sqlPage' element={<SqlPage />}/>
         <Route path='/aha' element={<Aha />}/>
+        <Route path='/aibot' element={<AIBot />}/>
       </Routes>
     </BrowserRouter>
     </>

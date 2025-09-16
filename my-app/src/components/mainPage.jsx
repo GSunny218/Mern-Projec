@@ -24,6 +24,9 @@ const MainPage = () => {
     const sqlCourse = () => {
         navigate('/sqlPage');
     }
+    const aiBot = () => {
+        navigate('/aibot');
+    }
 
     return(
         <>
@@ -32,7 +35,7 @@ const MainPage = () => {
                     <div><h1>SkillByte</h1></div>
                     <div className="upper-navbar"><h2>Select Your Programming Language</h2></div>
                     <div className="lower-navbar">
-                        <div>Support Our Devs</div>
+                        <div onClick={aiBot}>AI Bot</div>
                         <a href=""><div>&#9881;Setting</div></a>
                         <a href=""><div>About</div></a>
                         <a href=""><div>&#9742;Contact</div></a>

@@ -12,6 +12,7 @@ const HtmlPage = () => {
     const greaterThan = ">";
     const lessThanEqual = "<=";
     const greaterThanEqual = ">=";
+    const slash = "/";
 
     const [completedLessons, setCompletedLessons] = useState([]);
     const [currentPart, setCurrentPart] = useState(1);
@@ -53,7 +54,7 @@ const HtmlPage = () => {
                 return (
                     <div className="lesson-part">
                         <h2>What is HTML?</h2>
-                        <div><img className="python-image" src={htmlImage} alt="Python" /></div>
+                        <div><img className="html-image" src={htmlImage} alt="HTML" /></div>
                         <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It provides the structure and content of a webpage by using a series of elements and tags. HTML is the backbone of the web, allowing browsers to interpret and display text, images, links, and other multimedia content.</p>
 
                     </div>
@@ -107,14 +108,29 @@ const HtmlPage = () => {
             case 1:
                 return (
                     <div className="lesson-part">
-                        <h2>Paragraph Tag</h2>
-                        <p>In HTML </p>
+                        <h2>Opening tag and Closing tag</h2>
+                        <p>HTML is not syntactical language, it's a <i>Markup Language</i>.</p>
+                        <p>Each HTML tag has opening and closing tag, like,</p>
+                        <p className="syntax"><span className="less-than">{lessThan}</span>tag<span className="greater-than">{greaterThan}</span><span className="less-than">{lessThan}</span><span className="slash">{slash}</span>tag<span className="greater-than">{greaterThan}</span></p>
+                        <p>Above, it's not a specific tag. it's just a example.</p>
+                        <p>Tags like: p, span, div, heading tags, html, body, etc. have opening and closing tags.</p>
+                        <h2>Void Tags</h2>
+                        <p>HTML also has some special tags which don't have closing tag, such tags are called as <i>Void Tags</i></p>
+                        <p>Fpr example:</p>
+                        <p><span className="less-than">{lessThan}</span>img <span className="slash">{slash}</span><span className="greater-than">{greaterThan}</span></p>
+                        <p>Here, img is void tags.</p>
+                        <p>We have many tags like: link, meta, img, source, etc.</p>
+                        <p>Please don't be scared! We learn this tags and it's uses in next lessons.</p>
+                        <p>We use this tags to make websites and applications on internet.</p>
+
                     </div>
                 );
             case 2:
                 return (
                     <div className="lesson-part">
-                        
+                        <h2>Paragraph Tag: p</h2>
+                        <p>In HTML, p stands for paragraph. We simply write any text in tags</p>
+                        <div className="syntax"><span className="less-than">{lessThan}</span>p<span className="greater-than">{greaterThan}</span>Hi, I'm p tag<span className="less-than">{lessThan}</span><span className="slash">{slash}</span>p<span className="greater-than">{greaterThan}</span></div>
                     </div>
                 );
             case 3:
