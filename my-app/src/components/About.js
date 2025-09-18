@@ -18,6 +18,7 @@ const About = () => {
                         We provide comprehensive resources and tutorials to help you learn and grow.
                     </p>
                     <h2 className="motive">Our Mission</h2>
+                    <hr />
                     <p className="mission-description">
                         To empower individuals with the skills they need to succeed in the ever-evolving tech landscape.
                     </p>

@@ -43,7 +43,7 @@
 
 .rectangle-1 {
     text-align: center;
-    height: 450px;
+    height: 350px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(156, 161, 28), rgb(232, 255, 83), rgb(226, 255, 36));
     border: 2px solid rgb(242, 255, 0);
@@ -80,7 +80,7 @@
 
 .rectangle-2 {
     text-align: center;
-    height: 450px;
+    height: 350px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(28, 48, 161), rgb(83, 109, 255), rgb(36, 138, 255));
     border: 2px solid rgb(25, 0, 255);
@@ -121,7 +121,7 @@ section {
 }
 
 .rectangle-3 {
-    height: 430px;
+    height: 350px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(0, 163, 22), rgb(60, 255, 0), rgb(9, 255, 71));
     border: 2px solid rgb(0, 119, 0);
@@ -145,7 +145,7 @@ section {
 }
 
 .rectangle-4 {
-    height: 430px;
+    height: 350px;
     width: 890px;
     background-image: linear-gradient(60deg, rgb(147, 0, 163), rgb(235, 122, 255), rgb(206, 9, 255));
     border: 2px solid rgb(97, 0, 119);

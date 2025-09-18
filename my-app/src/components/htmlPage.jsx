@@ -30,9 +30,7 @@ const HtmlPage = () => {
         1: 3, // Lesson 1 has 3 parts
         2: 5, // Lesson 2 has 3 parts
         3: 3, // Lesson 3 has 3 parts
-        4: 4, // Lesson 4 has 4 parts
-        5: 5, // Lesson 5 has 4 parts
-        // Add more lessons and their parts as needed
+        4: 3, // Lesson 4 has 4 parts
     };
     const handleNextPart = (e) => {
         const totalParts = lessonParts[currentLesson];
@@ -267,19 +265,100 @@ const HtmlPage = () => {
                         <h2>Containers</h2>
                         <p>We going to learn how to make container that holds many HTML element tags. To make container we simply use <strong>'div'</strong> tag</p>
                         <p>'div' tag are used to group the all elements in it.</p>
-                        <p>Tag: <span className="less-than-h">{lessThan}</span>div<span className="greater-than-h">{greaterThan}</span></p>
+                        <br />
+                        Tag:<p className="syntax"> 
+                            <span className="less-than-h">{lessThan}</span>div<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>div<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>We can group element in div tag as many as we want.</p>
+                        <p>Let's see example that how can we group the elements:</p>
+                        <div className="syntax">
+                            <span className="less-than-h">{lessThan}</span>div<span className="greater-than-h">{greaterThan}</span>
+                            <p className="syntax">
+                                <span className="less-than-h">{lessThan}</span>h2<span className="greater-than-h">{greaterThan}</span>I'm Love programming
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>h2<span className="greater-than-h">{greaterThan}</span>
+                            </p>
+                            <p className="syntax">
+                                <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>My Favorite is HTML
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span>
+                            </p>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>div<span className="greater-than-h">{greaterThan}</span>
+                        </div>
+                        <div className="web-output">
+                            <div>
+                                <h2>I Love programming</h2>
+                                <p className="web-p-tag">My Favorite is HTMl</p>
+                            </div>
+                        </div>
                     </div>
                 );
             case 3:
                 return (
                     <div className="lesson-part">
-                        <h2>Multiple Values in Print Statement</h2>
-                        <p>You can print multiple values in a single print() statement by separating them with commas. For example,</p>
-                        <p className="syntax">city_name = <span className="string-value">"Mumbai"</span> <br/>
-                        country_name = <span className="string-value">"India"</span> <br/>
-                        print(city_name, country_name)</p>
-                        <p>Output: Mumbai India</p>
-                        <p>Here, both the values of 'city_name' and 'country_name' are printed in a single line, separated by a space.</p>
+                        <h2>Ordered and Unordered Lists</h2>
+                        <p>So far we learned HTMl, now it's time to learn about list. How they are made and how they look.</p>
+                        <ol>There are two type of list:
+                            <li>Ordered List</li>
+                            <li>Unodered List</li>
+                        </ol>
+                        <p>First we learn about <strong>'Ordered List'</strong></p>
+                        <p>Tags:</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>ol<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>ol<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>Only by writting this elements, doesn't have any effect.</p>
+                        <p>To make a list we should use <strong>List element</strong>. It's look like this:</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>li<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>li<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>To make list we have to wrap list elements in ordered list</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>ol<span className="greater-than-h">{greaterThan}</span>Fruits
+
+                            <p><span className="less-than-h">{lessThan}</span>li<span className="greater-than-h">{greaterThan}</span>Apple
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>li<span className="greater-than-h">{greaterThan}</span></p>
+
+                            <p><span className="less-than-h">{lessThan}</span>li<span className="greater-than-h">{greaterThan}</span>Banana
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>li<span className="greater-than-h">{greaterThan}</span></p>
+
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>ol<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <div className="web-output">
+                            <ol className="ol-web-output">Fruits
+                                <li>Apple</li>
+                                <li>Banana</li>
+                            </ol>
+                        </div>
+                        <p>We can make as many list as we want.</p>
+                        <p>However, ordered gives us number as list is created. This numbers are in ascending order.</p>
+                        <p>now let's see about <strong>Unordered List</strong></p>
+                        <p>Unordered list are created same like ordered list. But the differences is that they don't give numbers to list, althrough they give disc like bullets to each list.</p>
+                        <p>Tags:</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>ul<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>ul<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>To make list we have to wrap list elements in unordered list</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>ul<span className="greater-than-h">{greaterThan}</span>Fruits
+
+                            <p><span className="less-than-h">{lessThan}</span>li<span className="greater-than-h">{greaterThan}</span>Apple
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>li<span className="greater-than-h">{greaterThan}</span></p>
+
+                            <p><span className="less-than-h">{lessThan}</span>li<span className="greater-than-h">{greaterThan}</span>Banana
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>li<span className="greater-than-h">{greaterThan}</span></p>
+
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>ul<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <div className="web-output">
+                            <ul className="ol-web-output">Fruits
+                                <li>Apple</li>
+                                <li>Banana</li>
+                            </ul>
+                        </div>
+                        <p>You can see the differences clearly.</p>
                     </div>
                 );
             default:
@@ -292,77 +371,124 @@ const HtmlPage = () => {
             case 1:
                 return (
                     <div className="lesson-part">
-                        <h2>What are Expressions?</h2>
-                        <p>In Python, an expression is a combination of values, variables, operators, and function calls that can be evaluated to produce a result. Expressions can be as simple as a single value or variable, or they can be more complex, involving multiple operations and function calls.</p>
-                        <h3>Examples of Expressions</h3>
-                        <ul>
-                            <li>Simple Expression: <span className="syntax">5 + 3</span> (evaluates to 8)</li>
-                            <li>Variable Expression: <span className="syntax">x * 2</span> (where x is a variable)</li>
-                            <li>Function Call Expression: <span className="syntax">len("Hello")</span> (evaluates to 5)</li>
-                            <li>Complex Expression: <span className="syntax">(a + b) / c - d</span> (where a, b, c, and d are variables)</li>
-                        </ul>
+                        <h2>Marquee Tag</h2>
+                        <p>Now we are going to learn about advanced HTML. This HTML tags are used in very few websites like E-commerce, Stock Exchange, etc.</p>
+                        <p>Now we will learn about <strong>Marquee Tag</strong></p>
+                        <p>This tag used to advertise or to showcase temporary informations to web visitors.</p>
+                        <p>Tag:</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>marquee<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>marquee<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>Example:</p>
+                        <div className="syntax">
+                            <p>
+                                <span className="less-than-h">{lessThan}</span>marquee<span className="greater-than-h">{greaterThan}</span>
+
+                                <p>
+                                    <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>Python
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span>
+                                </p>
+
+                                <p>
+                                    <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>HTML
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span><span className="greater-than-h">{greaterThan}</span>
+                                </p>
+
+                                <p>
+                                    <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>CSS
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span>
+                                </p>
+                                
+                                <p>
+                                    <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>SQL
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span>
+                                </p>      
+
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>marquee<span className="greater-than-h">{greaterThan}</span>
+                            </p>
+                        </div>
+                        <p>Output:</p>
+                        <div className="web-output-marquee">
+                            <marquee behavior="scroll" direction="">
+                                <p>Python</p>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>SQL</p>
+                            </marquee>
+                        </div>
+                        <p>We can add Many things in Marquee tag.</p>
                     </div>
                 );
             case 2:
                 return (
                     <div className="lesson-part">
-                        <h2>Arithmetic Operators in Python</h2>
-                        <p>Python supports various arithmetic operators that can be used in expressions to perform mathematical operations. Here are some commonly used arithmetic operators:</p>
-                        <ul>
-                            <li>Addition (+): Adds two values together. Example: <span className="syntax">5 + 3</span> (evaluates to 8)</li>
-                            <li>Subtraction (-): Subtracts one value from another. Example: <span className="syntax">10 - 4</span> (evaluates to 6)</li>
-                            <li>Multiplication (*): Multiplies two values. Example: <span className="syntax">6 * 7</span> (evaluates to 42)</li>
-                            <li>Division (/): Divides one value by another and returns a float. Example: <span className="syntax">15 / 3</span> (evaluates to 5.0)</li>
-                            <li>Floor Division (//): Divides one value by another and returns the largest integer less than or equal to the result. Example: <span className="syntax">15 // 4</span> (evaluates to 3)</li>
-                            <li>Modulus (%): Returns the remainder of a division operation. Example: <span className="syntax">10 % 3</span> (evaluates to 1)</li>
-                            <li>Exponentiation (**): Raises a value to the power of another value. Example: <span className="syntax">2 ** 3</span> (evaluates to 8)</li>
-                        </ul>
+                        <h2>Details and Summary tag</h2>
+                        <p>Details and Summary tags used for to give some summary to web visitors about products, etc. This Tags got introdued in <strong>HTML5</strong></p>
+                        <p>Tag: details</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>details<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>details<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>Tag: summary</p>
+                        <p className="syntax">
+                            <span className="less-than-h">{lessThan}</span>summary<span className="greater-than-h">{greaterThan}</span>
+                            <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>summary<span className="greater-than-h">{greaterThan}</span>
+                        </p>
+                        <p>Both details and summary tags are like brothers. They used together at same time. Like the examle below</p>
+                        <div className="syntax">
+                            <p>
+                                <span className="less-than-h">{lessThan}</span>details<span className="greater-than-h">{greaterThan}</span>
+
+                                <p>
+                                    <span className="less-than-h">{lessThan}</span>summary<span className="greater-than-h">{greaterThan}</span>HTML
+
+                                    <p>
+                                        <span className="less-than-h">{lessThan}</span>div<span className="greater-than-h">{greaterThan}</span>HTML is markup language popularly used for Web-Development
+                                        <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>div<span className="greater-than-h">{greaterThan}</span>
+                                    </p>
+
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>summary<span className="greater-than-h">{greaterThan}</span>
+                                </p>
+
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>details<span className="greater-than-h">{greaterThan}</span>
+                            </p>
+                        </div>
+                        <div className="web-output">
+                            <details>
+                                <summary>HTML</summary>
+                                <div>HTML is markup language popularly used for Web-Development</div>
+                            </details>
+                        </div>
+                        <p>Press arrow bullet to see how it works..</p>
                     </div>
                 );
             case 3:
                 return (
                     <div className="lesson-part">
-                        <h2>Let's do some fun with python!</h2>
-                        <p>We go to see some python programs.</p>
-                        <h4>Of cause, python calculates maths in seconds. It complies your code and give precise output.</h4>
-                        <p className="syntax">print(5 + 3)</p>
-                        <p>Output: 8</p>
-                        <p className="syntax">print(10 - 4)</p>
-                        <p>Output: 6</p>
-                        <p className="syntax">print(6 * 7)</p>
-                        <p>Output: 42</p>
-                        <p className="syntax">print(15 / 3)</p>
-                        <p>Output: 5.0</p>
-                        <p className="syntax">print(15 // 4)</p>
-                        <p>Output: 3</p>
-                        <p className="syntax">print(10 % 3)</p>
-                        <p>Output: 1</p>
-                        <p className="syntax">print(2 ** 3)</p>
-                        <p>Output: 8</p>
-                        <h3>We can write program using complex expression by combining all arthmetic operator in n a single print() function</h3>
-                        <p className="syntax">print((5 + 3) * 2 - 4 / 2)</p>
-                        <p>Output: 14.0</p>
-                        <h3>Here, python first calculate the expression in the parenthesis, then multiplication and division from left to right, and finally subtraction.</h3>
-                    </div>
-                );
-            case 4:
-                return (
-                    <div className="lesson-part">
-                        <h2>Using Variables with arthmetic operation</h2>
-                        <p>You can also use variables in expressions with arithmetic operators. For example,</p>
-                        <p className="syntax">a = 5 <br/>
-                        b = 3 <br/>
-                        result = a + b <br/>
-                        print(result)</p>
-                        <p>Output: 8</p>
-                        <p>Here, we simply stored a integer number in variables and then stored in another variable with addition operator</p>
-                        <p className="syntax">x = 10 <br/>
-                        y = 4 <br/>
-                        result = x * y - 2 <br/>
-                        print(result)</p>
-                        <p>Output: 38</p>
-                        <p>Here, we simply stored a integer number in variables and then stored in another variable with multiplication and subtraction operator</p>
-                        <h3>In the next lesson, we will learn about "Basic Operators"</h3>
+                        <h2>Span tag</h2>
+                            <p>Span tag are used to write particular words or sentence in same line without any styling</p>
+                            <p>Tag:</p>
+                            <p className="syntax">
+                                <span className="less-than-h">{lessThan}</span>span<span className="greater-than-h">{greaterThan}</span>
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>span<span className="greater-than-h">{greaterThan}</span>
+                            </p>
+                            <p>Span tag used in many sites but their uses can't seen visibly.</p>
+                            <p>Example:</p>
+                            <div className="syntax">
+                                <span className="less-than-h">{lessThan}</span>p<span className="greater-than-h">{greaterThan}</span>Daily doing programming increases your 
+
+                                <span>
+                                    <span className="less-than-h">{lessThan}</span>span<span className="greater-than-h">{greaterThan}</span><span>problem-solving skils</span>
+                                    <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>span<span className="greater-than-h">{greaterThan}</span>
+                                </span>
+                                    
+
+                                <span className="less-than-h">{lessThan}</span><span className="slash-h">{slash}</span>p<span className="greater-than-h">{greaterThan}</span>
+                            </div>
+                            <div className="web-output">
+                                <div>Daily doing programming increases your problem-solving skils</div>
+                            </div>
                     </div>
                 );
             default:
@@ -457,7 +583,7 @@ const HtmlPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -490,7 +616,7 @@ const HtmlPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button  className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -523,7 +649,7 @@ const HtmlPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button  className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -549,14 +675,14 @@ const HtmlPage = () => {
                 <div className="lesson-content">
                     <div>
                         <div className="lesson-name">Expression and Arthmetic operations</div>
-                        <div><ProgressBar1 totalParts={4}/></div>
+                        <div><ProgressBar1 totalParts={3}/></div>
                     </div>
                     <hr className="hr-line"/>
                     <div>{renderPart4()}</div>
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -576,38 +702,6 @@ const HtmlPage = () => {
         );
     }
 
-    const htmlLesson5 = () => {
-        return (
-            <>
-                <div className="lesson-content">
-                    <div>
-                        <div className="lesson-name">Expression and Arthmetic operations</div>
-                        <div><ProgressBar1 totalParts={5}/></div>
-                    </div>
-                    <hr className="hr-line"/>
-                    <div>{renderPart5()}</div>
-                    <div>
-                        <div className='button-container'>
-                            {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
-                            }
-                            {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
-                                <button onClick={handleNextPart} className="next-button">Next</button>
-                            )}*/}
-                            {currentPart < lessonParts[currentLesson] ? 
-                                <button onClick={handleNextPart} className="next-button">Next</button> : 
-                                <button onClick={(e) => {
-                                    e.preventDefault();
-                                    setCompletedLessons([...completedLessons, currentLesson]);
-                                    alert('You have completed this lesson!')
-                                }} className="next-button">Finish</button>
-                            }
-                        </div>
-                    </div>
-                </div>
-            </>
-        );}
-
     const [currentLesson, setCurrentLesson] = useState(0);
     const handleLessonClick = (lessonNumber) => {
         setCurrentLesson(lessonNumber);
@@ -623,8 +717,6 @@ const HtmlPage = () => {
                 return htmlLesson3();
             case 4:
                 return htmlLesson4();
-            case 5:
-                return htmlLesson5();
             default:
                 return <div className="select-lesson">Select a lesson to start learning!</div>;
         }
@@ -652,9 +744,9 @@ const HtmlPage = () => {
                                 <div onClick={() => handleLessonClick(3)} 
                                     className={`l3 ${currentLesson === 3 ? 'active' : ''} ${completedLessons.includes(3) ? 'completed' : ''}`}>Intermediate HTML</div>
                                 <div onClick={() => handleLessonClick(4)} 
-                                    className={`l4 ${currentLesson === 4 ? 'active' : ''} ${completedLessons.includes(4) ? 'completed' : ''}`}>Semantic HTML</div>
-                                <div onClick={() => handleLessonClick(5)} 
-                                    className={`l5 ${currentLesson === 5 ? 'active' : ''} ${completedLessons.includes(5) ? 'completed' : ''}`}>Advance HTML - Hidden Tags</div>
+                                    className={`l4 ${currentLesson === 4 ? 'active' : ''} ${completedLessons.includes(4) ? 'completed' : ''}`}>Advanced HTML - Hidden Tags</div>
+                                {/*<div onClick={() => handleLessonClick(5)} 
+                                    className={`l5 ${currentLesson === 5 ? 'active' : ''} ${completedLessons.includes(5) ? 'completed' : ''}`}>Advance HTML - Hidden Tags</div>*/}
                             </div>
                             <div className="render-lessons">{renderLessons()}</div>
                         </div>

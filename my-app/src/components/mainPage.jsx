@@ -59,6 +59,7 @@ const MainPage = () => {
                         <div className="footer-text">
                             <div><h1>Learn, Study, Research and Build</h1></div>
                             <div><h2>Get Your Personalized Certificate of Every Course</h2></div>
+                            <div><h2>Try Our AI Silly to Learn and Grow</h2></div>
                         </div>
                         <div className="certificate-container">
                             <img className="certificate-pic" src={pythonCertificate} alt="Python Certificate Demo" />

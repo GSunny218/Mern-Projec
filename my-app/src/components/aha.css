@@ -26,7 +26,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 650px;
-  height: 450px;
+  height: 500px;
 }
 
 input {
@@ -119,7 +119,7 @@ input {
     transition: transform 0.3s ease;
 }
 
-h2 {
+.video-text, .page-title {
   margin: 20px 0 0 50px;
 }
 
@@ -143,18 +143,18 @@ label {
   color: white;
 }
 
-span {
+ .double-qoutes {
   font-weight: bolder;
   color: #ccc;
 }
 
-b {
+.quote-on-aha {
   font-size: large;
-  margin: 20px 0 0 350px;
+  margin: 20px 0 0 300px;
   color: #ccc;
 }
 
-p {
+.famous-qoute {
   margin-top: 110px;
   color: #ccc;
 }

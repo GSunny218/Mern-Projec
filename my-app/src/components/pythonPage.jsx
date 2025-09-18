@@ -372,7 +372,7 @@ const PythonPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -405,7 +405,7 @@ const PythonPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -438,7 +438,7 @@ const PythonPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -471,7 +471,7 @@ const PythonPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>
@@ -504,7 +504,7 @@ const PythonPage = () => {
                     <div>
                         <div className='button-container'>
                             {currentPart == 1 ? '':
-                                <button onClick={handlePrevPart}>Back</button>
+                                <button className="back-btn" onClick={handlePrevPart}>Back</button>
                             }
                             {/*{currentPart < lessonParts[currentLesson] && (              //Mat Dhyan de
                                 <button onClick={handleNextPart} className="next-button">Next</button>

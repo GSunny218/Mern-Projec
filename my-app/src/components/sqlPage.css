@@ -39,6 +39,7 @@
     height: 700px;
     width: 500px;
     background-color: #30002b;
+    
 }
 
 .l1 {
@@ -216,10 +217,10 @@
     text-align: center;
 }
 
-.html-image {
+.sql-image {
     width: 100px;
     height: 100px;
-    margin: 20px 0;
+    margin: 200px 0;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin: 20px 0 0 450px;
@@ -269,83 +270,27 @@ li {
     color: rgb(85, 255, 136);
 }
 
-.select-lesson {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    text-align: center;
-    color: #d1d1d1;
-    font-weight: bold;
-    font-size: 30px;
-    border: #f9d5fc 2px dashed;
-    padding: 0 40px;
+
+.back-btn {
+     margin: 5px;
+    height: 100px;
+    background-color: rgb(84, 0, 88);
+    width: 250px;
+    transition: all 0.3s ease;
+    color: #e0e0e0;
 }
 
-.less-than-h {
-    color: rgb(255, 44, 44);
-    font-size: 1.1rem;
+.back-btn:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
 }
 
-.greater-than-h {
-    color: rgb(255, 44, 44);
-    font-size: 1.1rem;
+table, th, td {
+    border: #ffffff 2px solid;
+    padding: 5px;
 }
 
-.slash-h {
-    color: #9300a0;
-    font-size: 1.1rem;
-}
-
-.web-output {
-    margin: 10px 0 0 0;
-    height: 200px;
-    width: 400px;
-    max-width: 1100px;
-    background-color: #d1d1d1;
-    border-radius: 4px;
-    color: #000000;
-    padding: 2px;
-    box-shadow: 5px 10px  0 1px #8b8b8b;
-}
-
-.headings {
-    height: 400px;
-    margin: auto;
-}
-
-.h1-show, .h2-show, .h3-show, .h4-show, .h5-show, .h6-show {
-    text-align: center;
-    margin: none;
-    color: #000;
-}
-
-.h2-show {
-    margin: -9px;
-}
-
-.html-btn {
-    color: black;
-    background-color: rgb(140, 140, 140);
-    width: 120px;
-    height: 40px;
-    border: #666 1px solid;
-}
-
-.html-btn:hover {
-    background-color: #666;
-    color: #000;
-}
-
-.input-tag-h {
-    margin: 10px 0 0 20px;
-    background-color: #8b8b8b;
-    border-radius: none;
-}
-
-.web-p-tag {
-    color: #262626;
-}
-
-.ol-web-output {
-    margin-left: 20px;
+.keyword {
+    color: #a700cd;
+    font-family: 'Courier New', Courier, monospace;
 }

@@ -209,7 +209,7 @@ const Layout = () => {
                 {renderQuestion()}
             </div>
             <div className='button-container'>
-                {currentQuestion === 1 ? '' : <button onClick={handleBackQuestion}>Back</button>}
+                {currentQuestion === 1 ? '' : <button className="back-btn" onClick={handleBackQuestion}>Back</button>}
                 <button onClick={handleNextQuestion} className="next-button">{currentQuestion === 5 ? 'Finish' : 'Next'}</button>
             </div>
         </div>

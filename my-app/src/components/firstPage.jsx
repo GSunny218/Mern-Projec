@@ -58,7 +58,7 @@ const FirstPage = () => {
             <h5 className="section-1-description">
                 Your journey to mastering skills starts here.
             </h5>
-            <Link to="/access" className="get-started-button2">Get Started</Link>
+            {/*<Link to="/access" className="get-started-button2">Get Started</Link>*/}
         </section>
         <section className="section-2">
             <div className="skills-section">
@@ -93,10 +93,11 @@ const FirstPage = () => {
         </section>
       </main>
       <footer className="footer-1">
-        <div className="footer-content">
-            <p>&copy; 2023 SkillByte. All rights reserved.</p>
+        <div className="footer-content-1">
+            <h1>AI-Powered Code Learning Application</h1>
+            <p className="copyRights">&copy; 2023 SkillByte. All rights reserved.</p>
             <div className="footer-links">
-                <a href="/" className="privacy-policy">Privacy Policy</a>
+                <Link to="/pp" className="privacy-policy">Privacy Policy</Link>
                 <a href="/" className="tns">Terms of Service</a>
             </div>
         </div>

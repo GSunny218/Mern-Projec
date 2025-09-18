@@ -46,7 +46,7 @@ const AIBot = () => {
                     }
                 } else {
                     console.error('API Error:', this.status, this.statusText);
-                    handleError(`Error ${this.status}: ${this.statusText}`);
+                    handleError(`OOPS! API server busy. Enable to load`);
                 }
                 setIsLoading(false);
             }
@@ -97,6 +97,7 @@ const AIBot = () => {
             <form onSubmit={handleSubmit} className="chat-input">
                 <input
                     type="text"
+                    className="input-ai"
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)}
                     placeholder="Ask Silly anything..."

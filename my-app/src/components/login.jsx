@@ -73,7 +73,7 @@ const Signup = () => {
       <div className="heading">
         <h2>Create your New Account</h2>
         <Link className="aha" to="/aha">
-          Already have account?
+          Already have account? SignIn
         </Link>
       </div>
       <div className="spacer">
@@ -129,7 +129,7 @@ const Signup = () => {
             </div>
             <div>
               <Link className="aha2" to="/aha">
-                Already have account?
+                Already have account? SignIn
               </Link>
               <button className="login-btn" type="submit" disabled={loading}>
                 {loading ? "Signing up..." : "Sign Up"}

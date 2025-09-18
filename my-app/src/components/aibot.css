@@ -1,10 +1,10 @@
 .chatbot-container {
     position: fixed;
     top: 0;
-    left: 2%;
+    left: 0;
     right: 0;
     bottom: 0;
-    width: 97%;
+    width: 100%;
     height: 100vh;
     background: white;
     display: flex;
@@ -54,6 +54,10 @@
     border-left: 4px solid #c62828;
 }
 
+.input-ai {
+    margin-left: 50px;
+}
+
 .chat-input {
     display: flex;
     padding: 20px;
@@ -74,6 +78,10 @@
 
 .chat-input input:focus {
     border-color: #4a0043;
+}
+
+input::-webkit-input-placeholder {
+    color: #30002b;
 }
 
 .chat-input button {

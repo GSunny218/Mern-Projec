@@ -78,6 +78,7 @@ const Contact = () => {
         <h3>Submit a Grievance (Complaint)</h3>
         <form onSubmit={submitComplaint} className="contact-form">
           <input
+            className="name-contact"
             type="text"
             placeholder="Your Name"
             value={complaintData.name}
@@ -86,6 +87,7 @@ const Contact = () => {
           />
           <input
             type="email"
+            className="email-contact"
             placeholder="Your Email"
             value={complaintData.email}
             onChange={(e) => setComplaintData({ ...complaintData, email: e.target.value })}
@@ -97,7 +99,7 @@ const Contact = () => {
             onChange={(e) => setComplaintData({ ...complaintData, message: e.target.value })}
             required
           />
-          <button type="submit">Submit Complaint</button>
+          <button className="contact-btn" type="submit">Submit Complaint</button>
         </form>
       </div>
 
@@ -107,6 +109,7 @@ const Contact = () => {
         <form onSubmit={submitFeedback} className="contact-form">
           <input
             type="text"
+            className="complaint-contact"
             placeholder="Complaint reference (optional)"
             value={feedbackData.complaint}
             onChange={(e) => setFeedbackData({ ...feedbackData, complaint: e.target.value })}
@@ -117,7 +120,7 @@ const Contact = () => {
             onChange={(e) => setFeedbackData({ ...feedbackData, feedback: e.target.value })}
             required
           />
-          <button type="submit">Submit Feedback</button>
+          <button className="contact-btn" type="submit">Submit Feedback</button>
         </form>
       </div>
 

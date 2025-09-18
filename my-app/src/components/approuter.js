@@ -12,6 +12,7 @@ import HtmlPage from './htmlPage';
 import CssPage from './cssPage';
 import SqlPage from './sqlPage';
 import Aha from './aha';
+import PrivacyPolicy from './pp';
 import AIBot from './aibot';
 
 const AppRouter = () => {
@@ -32,6 +33,7 @@ const AppRouter = () => {
         <Route path='/sqlPage' element={<SqlPage />}/>
         <Route path='/aha' element={<Aha />}/>
         <Route path='/aibot' element={<AIBot />}/>
+        <Route path="/pp" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
     </>

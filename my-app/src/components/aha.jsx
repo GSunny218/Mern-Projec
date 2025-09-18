@@ -50,7 +50,7 @@ const Aha = () => {
             <div className="aha-container">
                 <div className="heading">
                     <h1>Welcome Back!</h1>
-                    <h2>Access Your Existing Account</h2>
+                    <h2 className="page-title">Access Your Existing Account</h2>
                     <Link className="aha" to="/login">Create a new account ?</Link>
                 </div>
                 <div className="spacer">
@@ -73,8 +73,8 @@ const Aha = () => {
                                 <button className="login-btn" type="submit">Go</button>
                             </div>
                             <div>
-                                <p><span>"</span><i>Clean code always looks like it was written by someone who cares</i><span>"</span></p>
-                                <b>- Robert C. Martin</b>
+                                <p className="famous-qoute"><span className="double-qoutes">"</span><i>Code is read much more often than it is written.</i><span  className="double-qoutes">"</span></p>
+                                <b className="quote-on-aha">- Guido Van Rossum, creator of Python</b>
                             </div>
                         </form>
                         
